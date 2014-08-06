@@ -45,7 +45,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
 	.intro-message {
-		padding-bottom: 15%;
+		padding-bottom: none;
 	}
 
 	.intro-message > h1 {
@@ -142,6 +142,8 @@ body, h1, h2, h3, h4, h5, h6 {
 	}	
 }
 
+
+
 footer {
 	background-color: #D3D1E5;
 	padding: 50px 0;
@@ -153,4 +155,12 @@ p.copyright {
 
 .navbar-default {
 	background-color: #D3D1E5;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #B6B5B8;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #B6B5B8;
 }
