@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  // font-family: "Ibarra Real Nova", serif;
+  font-family: "Montserrat", sans-serif;
+  // font-family: "Rokkitt", serif;
+  background-color: #fceff7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.mainBody {
+  @extend %linkStyle;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem 1.45rem 1.0875rem;
+  text-align: left;
+}
+
+.faIcons {
+  font-size: 30px;
+}
+
+.header {
+  @extend %linkStyle;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 20px 0px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: normal;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: row;
+
+  .ypMenu {
+    .header-links {
+      height: 100%;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      font-size: 0.9em;
+      padding-left: 200px;
+
+      > li {
+        padding: 0px 10px;
+      }
+
+      .linkItem {
+        color: $mainColor;
+        text-decoration: none;
+      }
+
+      .portfolio,
+      .now,
+      .blog,
+      .contact {
+        margin-top: 20px;
+      }
+
+      .linkItemActive {
+        color: $subColor;
+      }
+    }
+  }
+
+  @media (min-width: 790px) {
+    flex-direction: row;
+  }
+}
+
+.footer {
+  padding: 0.5em 30px;
+  @extend %linkStyle;
+
+  .footer-links {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    color: $mainColor;
+    a {
+      text-decoration: underline;
+      color: $mainColor;
+    }
+  }
+}

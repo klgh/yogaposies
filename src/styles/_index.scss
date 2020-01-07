@@ -1,0 +1,10 @@
+.hpImage {
+  .gatsby-image-wrapper {
+    @include for-size(phone-only) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  }
+}
