@@ -18,7 +18,7 @@ const IndexPage = () => (
       <p class="lead">
         <img
           class="size-medium wp-image-80 alignright"
-          src="http://yogaposies.com/wp-content/uploads/2016/03/balance-300x225.jpg"
+          src="https://yogaposies.com/wp-content/uploads/2016/03/balance-300x225.jpg"
           alt="balance"
           width="300"
           height="225"
@@ -50,7 +50,7 @@ const IndexPage = () => (
       <p>
         <img
           class="alignleft size-medium wp-image-82"
-          src="http://yogaposies.com/wp-content/uploads/2016/03/camp-300x225.jpg"
+          src="https://yogaposies.com/wp-content/uploads/2016/03/camp-300x225.jpg"
           alt="camp"
           width="300"
           height="225"
@@ -79,7 +79,7 @@ const IndexPage = () => (
       <p>
         <img
           class="alignright size-medium wp-image-83"
-          src="http://yogaposies.com/wp-content/uploads/2016/03/camp5-300x225.jpg"
+          src="https://yogaposies.com/wp-content/uploads/2016/03/camp5-300x225.jpg"
           alt="camp5"
           width="300"
           height="225"
