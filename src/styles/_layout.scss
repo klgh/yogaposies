@@ -3,7 +3,7 @@ body {
   // font-family: "Ibarra Real Nova", serif;
   font-family: "Montserrat", sans-serif;
   // font-family: "Rokkitt", serif;
-  background-color: #fceff7;
+  background-color: #f5f5f5;
 }
 
 h1,
@@ -56,15 +56,9 @@ h5 {
         text-decoration: none;
       }
 
-      .portfolio,
-      .now,
-      .blog,
-      .contact {
-        margin-top: 20px;
-      }
-
       .linkItemActive {
-        color: $subColor;
+        color: $subColor3;
+        text-decoration: underline;
       }
     }
   }

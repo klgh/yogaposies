@@ -31,11 +31,11 @@ const Header = ({ siteTitle }) => (
         </li>
         <li>
           <Link
-            to="/current-classes"
+            to="/family-yoga"
             className="linkItem"
             activeClassName="linkItemActive"
           >
-            current classes
+            family yoga
           </Link>
         </li>
         <li>
@@ -62,7 +62,7 @@ const Header = ({ siteTitle }) => (
             className="linkItem"
             activeClassName="linkItemActive"
           >
-            workshops-and-trainings
+            Workshops and Trainings
           </Link>
         </li>
         <li>

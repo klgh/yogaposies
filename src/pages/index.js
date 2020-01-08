@@ -7,24 +7,28 @@ import { Link } from "gatsby"
 const IndexPage = () => (
   <PageLayout>
     <SEO title="Yoga Posies | atlanta yoga for kids and adults" />
-    <div class="hpImage">
+
+    <div className="ypHe">
       <Image />
     </div>
 
-    <div class="container">
-      <h2 class="section-heading">
+    <div className="hpImage">
+    </div>
+
+    <div className="container">
+      <h2 className="section-heading">
         <Link to="/kids">kids yoga</Link>
       </h2>
-      <p class="lead">
+      <p className="lead">
         <img
-          class="size-medium wp-image-80 alignright"
+          className="size-medium wp-image-80 alignright"
           src="https://yogaposies.com/wp-content/uploads/2016/03/balance-300x225.jpg"
           alt="balance"
           width="300"
           height="225"
         />
       </p>
-      <p class="lead">
+      <p className="lead">
         Yoga is expressive and that is why it is so appealing to children. Our
         goal at Yoga Posies is to introduce yoga in a clear and simple way that
         makes it fun to do. We practice fun-filled poses, games and breathing
@@ -42,21 +46,21 @@ const IndexPage = () => (
         maintain a positive environment that supports self-esteem, confidence,
         body appreciation and tools for stress management.
       </p>
-      <h2 class="section-heading">
+      <h2 className="section-heading">
         Benefits of Yoga
         <br />
         for kids
       </h2>
       <p>
         <img
-          class="alignleft size-medium wp-image-82"
+          className="alignleft size-medium wp-image-82"
           src="https://yogaposies.com/wp-content/uploads/2016/03/camp-300x225.jpg"
           alt="camp"
           width="300"
           height="225"
         />
       </p>
-      <p class="lead">
+      <p className="lead">
         Yoga is for everyone. Children do yoga naturally, they love to be upside
         down in downward facing dog, stand on one leg like a tree &amp; crawl on
         the floor like a cat. Children are very flexible - we eventually lose
@@ -75,10 +79,10 @@ const IndexPage = () => (
         </span>
         .” <em> Deepak Chopra</em>
       </p>
-      <h2 class="section-heading">Children Who Practice Yoga</h2>
+      <h2 className="section-heading">Children Who Practice Yoga</h2>
       <p>
         <img
-          class="alignright size-medium wp-image-83"
+          className="alignright size-medium wp-image-83"
           src="https://yogaposies.com/wp-content/uploads/2016/03/camp5-300x225.jpg"
           alt="camp5"
           width="300"
