@@ -2,7 +2,7 @@ import React from "react"
 import PageLayout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const IndexPage = props => (
