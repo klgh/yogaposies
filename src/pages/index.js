@@ -4,15 +4,12 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
-const IndexPage = () => (
+const IndexPage = props => (
   <PageLayout>
     <SEO title="Yoga Posies | atlanta yoga for kids and adults" />
 
-    <div className="ypHe">
+    <div className="hero">
       <Image />
-    </div>
-
-    <div className="hpImage">
     </div>
 
     <div className="container">
