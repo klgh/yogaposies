@@ -79,6 +79,27 @@ const IndexPage = props => (
         </div>
       </div>
 
+      <div className="upcoming-events">
+        <ul>
+          {props.data.allTribeEvents.edges.map(events => (
+            <li>
+              <div className="event-information">
+                <h3 className="event-title">{events.node.title}</h3>
+                <p className="event-details">
+                  {events.node.start_date}
+                  <br />
+                  <a href={`${events.node.venue.website}`}>
+                    {events.node.venue.venue}
+                  </a>
+                  <br />
+                  <a href={`${events.node.website}`}>more info</a>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <div className="quotes">
         <div className="quote1">
           <p>
@@ -124,6 +145,25 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allTribeEvents {
+      edges {
+        node {
+          title
+          start_date(formatString: "MMMM DD, YYYY")
+          end_date(formatString: "HH:MM a")
+          description
+          cost
+          categories {
+            name
+          }
+          venue {
+            venue
+            website
+          }
+          website
         }
       }
     }

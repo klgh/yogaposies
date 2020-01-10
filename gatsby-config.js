@@ -70,5 +70,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-source-tribe-events",
+      options: {
+        baseUrl: "https://content.yogaposies.com/",
+        maxEvents: 5,
+      },
+    },
   ],
 }
