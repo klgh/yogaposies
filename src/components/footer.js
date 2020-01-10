@@ -1,7 +1,7 @@
 import React from "react"
 
 const Footer = () => (
-  <div>
+  <footer>
     <div className="footer">
       <div className="footer-links">
         <br />© {new Date().getFullYear()}, Built with
@@ -23,7 +23,7 @@ const Footer = () => (
         </a>
       </div>
     </div>
-  </div>
+  </footer>
 )
 
 export default Footer
