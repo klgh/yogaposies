@@ -22,6 +22,11 @@
     padding-top: 10px;
   }
 
+  @include for-size(tablet-only) {
+    //flex-direction: column;
+    padding-top: 10px;
+  }
+
   .card {
     width: 25%;
     height: max-content;
@@ -30,7 +35,18 @@
     margin-bottom: auto;
     margin-left: auto;
     @include for-size(phone-only) {
-      width: 100%;
+      width: 90%;
+    }
+    @include for-size(tablet-only) {
+      .card-text {
+        font-size: 16px;
+        ul {
+          margin-bottom: none;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+      }
     }
     h2 {
       margin-top: 20px;
@@ -60,19 +76,41 @@
 
 .upcoming-events {
   order: 2;
-  display: flex;
+  //display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
 
+  @include for-size(tablet-only) {
+    margin-top: auto;
+    margin-left: 1%;
+  }
+
+  h3 {
+    color: $mainColor;
+  }
+
   ul {
     list-style: none;
     display: flex;
 
+    @include for-size(phone-only) {
+      flex-direction: column;
+      margin-left: auto;
+    }
+
+    @include for-size(tablet-only) {
+      flex-direction: column;
+      margin-left: 10%;
+    }
+
     li {
       width: 50%;
+      @include for-size(phone-only) {
+        width: 100%;
+      }
     }
   }
   .event-information {
@@ -92,6 +130,14 @@
   align-items: flex-start;
   margin: 0 auto;
   margin-top: 5%;
+
+  @include for-size(phone-only) {
+    margin: 0 20px;
+  }
+
+  @include for-size(tablet-only) {
+    margin: 0 20%;
+  }
 
   .quote1 {
     order: 1;

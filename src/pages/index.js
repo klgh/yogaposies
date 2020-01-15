@@ -20,8 +20,8 @@ const IndexPage = props => (
             <Img fluid={props.data.yogaposies.childImageSharp.fluid} />
             <h2>Kids Yoga</h2>
           </Link>
-          <div>
-            <p className="lead">
+          <div className="card-text">
+            <p>
               Yoga is expressive and that is why it is so appealing to children.
               Our goal at Yoga Posies is to introduce yoga in a clear and simple
               way that makes it fun to do. We practice fun-filled poses, games,
@@ -44,42 +44,48 @@ const IndexPage = props => (
         </div>
         <div className="item2 card">
           <Img fluid={props.data.leaf.childImageSharp.fluid} />
-          <h2>Benefits of Yoga for kids</h2>
-          <p className="benefits">
-            Yoga is for everyone. Children do yoga naturally, they love to be
-            upside down in downward facing dog, stand on one leg like a tree
-            &amp; crawl on the floor like a cat. Children are very flexible - we
-            eventually lose that flexibility as we age. Through playful laughter
-            &amp; a sense of adventure kids can learn basic flexibility,
-            coordination, body awareness &amp; self control. If they are feeling
-            anxious about talking in front of the class or having trouble
-            focusing on their homework, kids will unconsciously call upon the
-            mind calming techniques taught to them in yoga.
-          </p>
+          <div className="card-text">
+            <h2>Benefits of Yoga for kids</h2>
+            <p>
+              Yoga is for everyone. Children do yoga naturally, they love to be
+              upside down in downward facing dog, stand on one leg like a tree
+              &amp; crawl on the floor like a cat. Children are very flexible -
+              we eventually lose that flexibility as we age. Through playful
+              laughter &amp; a sense of adventure kids can learn basic
+              flexibility, coordination, body awareness &amp; self control. If
+              they are feeling anxious about talking in front of the class or
+              having trouble focusing on their homework, kids will unconsciously
+              call upon the mind calming techniques taught to them in yoga.
+            </p>
+          </div>
         </div>
         <div className="item3 card">
           <Img fluid={props.data.yogaclass.childImageSharp.fluid} />
-          <h2 className="section-heading">Children Who Practice Yoga</h2>
-          <ul>
-            <li>Develop strong, limber and healthy bodies</li>
-            <li>Set a lifelong foundation for well-being</li>
-            <li>Foster creative expression, imagination</li>
-            <li>Increase focus, concentration and attention span</li>
-            <li>
-              Cultivate self-esteem, setting patterns of success and achievement
-            </li>
-            <li>Relax and sleep better</li>
-            <li>Cope with life stressors more effectively</li>
-            <li>Learn about anatomy and physiology</li>
-            <li>
-              Discover a sense of awareness and respect for themselves, for
-              others and the world around them
-            </li>
-          </ul>
+          <div className="card-text">
+            <h2 className="section-heading">Children Who Practice Yoga</h2>
+            <ul>
+              <li>Develop strong, limber and healthy bodies</li>
+              <li>Set a lifelong foundation for well-being</li>
+              <li>Foster creative expression, imagination</li>
+              <li>Increase focus, concentration and attention span</li>
+              <li>
+                Cultivate self-esteem, setting patterns of success and
+                achievement
+              </li>
+              <li>Relax and sleep better</li>
+              <li>Cope with life stressors more effectively</li>
+              <li>Learn about anatomy and physiology</li>
+              <li>
+                Discover a sense of awareness and respect for themselves, for
+                others and the world around them
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="upcoming-events">
+        <h3>Upcoming Classes</h3>
         <ul>
           {props.data.allTribeEvents.edges.map(events => (
             <li>
