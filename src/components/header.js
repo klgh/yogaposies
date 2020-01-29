@@ -40,7 +40,7 @@ const Header = ({ siteTitle }) => (
               className="linkItem"
               activeClassName="linkItemActive"
             >
-              family yoga
+              family
             </Link>
           </li>
           <li>
