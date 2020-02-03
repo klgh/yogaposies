@@ -14,65 +14,20 @@ const Header = ({ siteTitle }) => (
         <ul className="header-links" id="menu">
           <li>
             <Link
-              to="/adults"
+              to="/about"
               className="linkItem"
               activeClassName="linkItemActive"
             >
-              adults
+              about
             </Link>
           </li>
           <li>
             <Link
-              to="/kids"
+              to="/classes"
               className="linkItem"
               activeClassName="linkItemActive"
             >
-              kids
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/family-yoga"
-              className="linkItem"
-              activeClassName="linkItemActive"
-            >
-              family
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="linkItem"
-              activeClassName="linkItemActive"
-            >
-              contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/links"
-              className="linkItem"
-              activeClassName="linkItemActive"
-            >
-              links
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/workshops-and-trainings"
-              className="linkItem"
-              activeClassName="linkItemActive"
-            >
-              Workshops and Trainings
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/forms"
-              className="linkItem"
-              activeClassName="linkItemActive"
-            >
-              forms
+              classes
             </Link>
           </li>
           <li>
@@ -86,11 +41,29 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link
-              to="/about"
+              to="/forms"
               className="linkItem"
               activeClassName="linkItemActive"
             >
-              about
+              forms
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/links"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              links
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              contact
             </Link>
           </li>
         </ul>
