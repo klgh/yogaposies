@@ -11,10 +11,6 @@ const Header = ({ siteTitle }) => (
     </div>
     <nav role="navigation">
       <div className="ypMenu" id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
         <ul className="header-links" id="menu">
           <li>
             <Link
