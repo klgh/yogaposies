@@ -1,0 +1,49 @@
+$mainColor: #97a2a8;
+$subColor2: #a89797;
+$subColor: #f7f6de;
+$subColor3: #aebac2;
+
+$linkColor: #ac8e60;
+
+/* Media Queries */
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == tablet-only {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $size == phone-small {
+    @media (max-width: 345px) {
+      @content;
+    }
+  } @else if $size == small-desk {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == tab-desk {
+    @media (min-width: 768px) and (max-width: 990px) {
+      @content;
+    }
+  }
+}
+
+/* Extends */
+
+%linkStyle {
+  a:link,
+  a:visited,
+  a:active {
+    color: $mainColor;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $subColor2;
+  }
+}

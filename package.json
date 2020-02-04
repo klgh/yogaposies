@@ -1,25 +1,30 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "yoga-posies",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "the yoga posies website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kaleigh Scruggs <kaleighscruggs@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.18.18",
-    "gatsby-cli": "^2.8.23",
-    "gatsby-image": "^2.2.37",
-    "gatsby-plugin-manifest": "^2.2.34",
-    "gatsby-plugin-offline": "^3.0.30",
-    "gatsby-plugin-react-helmet": "^3.1.18",
-    "gatsby-plugin-sharp": "^2.3.10",
-    "gatsby-plugin-sitemap": "^2.2.24",
-    "gatsby-source-filesystem": "^2.1.43",
-    "gatsby-source-wordpress": "^3.1.54",
-    "gatsby-transformer-sharp": "^2.3.9",
+    "gatsby": "^2.19.12",
+    "gatsby-cli": "^2.8.29",
+    "gatsby-image": "^2.2.40",
+    "gatsby-plugin-google-analytics": "^2.1.35",
+    "gatsby-plugin-manifest": "^2.2.41",
+    "gatsby-plugin-offline": "^3.0.34",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sass": "^2.1.28",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-sitemap": "^2.2.27",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-source-tribe-events": "^1.0.1",
+    "gatsby-source-wordpress": "^3.1.60",
+    "gatsby-transformer-sharp": "^2.3.14",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -39,9 +44,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/klgh/yogaposies"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/klgh/yogaposies/issues"
   }
 }
