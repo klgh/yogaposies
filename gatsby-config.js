@@ -77,5 +77,11 @@ module.exports = {
         maxEvents: 5,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-75170508-2",
+      },
+    },
   ],
 }
