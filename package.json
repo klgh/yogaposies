@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kaleigh Scruggs <kaleighscruggs@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.19.12",
+    "gatsby": "^2.19.14",
     "gatsby-cli": "^2.8.29",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-google-analytics": "^2.1.35",
@@ -17,7 +17,7 @@
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-source-tribe-events": "^1.0.1",
-    "gatsby-source-wordpress": "^3.1.60",
+    "gatsby-source-wordpress": "^3.1.62",
     "gatsby-transformer-sharp": "^2.3.14",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
