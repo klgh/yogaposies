@@ -4,9 +4,10 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Yoga Posies`,
-    description: `yoga for adults and kids in atlanta`,
+    description: `Yoga Classes in the metro Atlanta area including Dunwoody, Roswell, and Sandy Springs. Classes are geared towards anyone and everyone including kids, pre-teens, teens, adults, and prenatal yoga.`,
     author: `@kaleighscruggs`,
     siteUrl: "https://yogaposies.com",
+    shortDescription: `Our goal at Yoga Posies is to introduce yoga in a clear and simple way that makes it fun to do.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
