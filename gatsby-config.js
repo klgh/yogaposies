@@ -8,6 +8,7 @@ module.exports = {
     author: `@kaleighscruggs`,
     siteUrl: "https://yogaposies.com",
     shortDescription: `Our goal at Yoga Posies is to introduce yoga in a clear and simple way that makes it fun to do.`,
+    image: `src/images/YogaPosies.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,7 +27,7 @@ module.exports = {
         background_color: `#f5f5f5`,
         theme_color: `#a89797`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, 
+        icon: `src/images/favicon.png`,
       },
     },
     {
