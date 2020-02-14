@@ -23,10 +23,10 @@ module.exports = {
         name: `Yoga Posies`,
         short_name: `yoga posies`,
         start_url: `/`,
-        background_color: `white`,
-        theme_color: `black`,
+        background_color: `#f5f5f5`,
+        theme_color: `#a89797`,
         display: `minimal-ui`,
-        /* icon: `src/images/gatsby-icon.png`,  */
+        icon: `src/images/favicon.png`, 
       },
     },
     {
