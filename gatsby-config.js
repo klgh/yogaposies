@@ -86,6 +86,7 @@ module.exports = {
         trackingId: "UA-75170508-2",
       },
     },
+
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {

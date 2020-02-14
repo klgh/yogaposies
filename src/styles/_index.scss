@@ -8,6 +8,13 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+
+  @include for-size(tablet-only) {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem 1.45rem 1.0875rem;
+    text-align: center;
+  }
 }
 
 .index-cards {
@@ -85,11 +92,18 @@
 
   @include for-size(tablet-only) {
     margin-top: auto;
-    margin-left: 1%;
+    margin-left: 30%;
+  }
+
+  @include for-size(phone-only) {
+    flex-direction: column;
   }
 
   h3 {
     color: $mainColor;
+    @include for-size(tablet-only) {
+      width: max-content;
+    }
   }
 
   ul {
@@ -103,7 +117,7 @@
 
     @include for-size(tablet-only) {
       flex-direction: column;
-      margin-left: 10%;
+      margin-left: 0%;
     }
 
     li {
@@ -119,6 +133,9 @@
     }
     h3 {
       color: $mainColor;
+      @include for-size(tablet-only) {
+        width: auto;
+      }
     }
   }
 }
