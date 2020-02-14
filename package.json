@@ -5,10 +5,13 @@
   "version": "0.1.0",
   "author": "Kaleigh Scruggs <kaleighscruggs@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "gatsby": "^2.19.17",
     "gatsby-cli": "^2.8.29",
     "gatsby-image": "^2.2.41",
-
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-offline": "^3.0.34",

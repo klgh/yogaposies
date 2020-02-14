@@ -1,6 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+library.add(fab)
 
 const Header = ({ siteTitle }) => (
   <header className="header">
@@ -64,6 +68,17 @@ const Header = ({ siteTitle }) => (
               activeClassName="linkItemActive"
             >
               contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="https://www.facebook.com/YogaPosies/"
+              className="font-awesome-icon"
+            >
+              <FontAwesomeIcon
+                title="yoga posies facebook"
+                icon={["fab", "facebook"]}
+              />
             </Link>
           </li>
         </ul>
