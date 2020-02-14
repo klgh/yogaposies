@@ -14,6 +14,51 @@ const Header = ({ siteTitle }) => (
         <ul className="header-links" id="menu">
           <li>
             <Link
+              to="/about"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              about
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/classes"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              classes
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/summer-camp"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              summer camp
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/forms"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              forms
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/links"
+              className="linkItem"
+              activeClassName="linkItemActive"
+            >
+              links
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               className="linkItem"
               activeClassName="linkItemActive"
