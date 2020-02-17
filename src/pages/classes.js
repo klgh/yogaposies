@@ -12,33 +12,11 @@ const IndexPage = props => (
         <h1>Classes</h1>
       </div>
 
-      {/*   <div className="upcoming-events">
-      <h3>Upcoming Classes</h3>
-      <ul>
-        {props.data.allTribeEvents.edges.map(events => (
-          <li>
-            <div className="event-information">
-              <h3 className="event-title">{events.node.title}</h3>
-              <p className="event-details">
-                {events.node.start_date}
-                <br />
-                <a href={`${events.node.venue.website}`}>
-                  {events.node.venue.venue}
-                </a>
-                <br />
-                <a href={`${events.node.website}`}>more info</a>
-              </p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div> */}
-
       <div className="container">
         <div className="class-cards">
           <div className="item1 card">
             <Link to="/kids">
-              <Img fluid={props.data.yogaposies.childImageSharp.fluid} />
+              <Img fluid={props.data.yogakids.childImageSharp.fluid} />
               <h2>Kids</h2>
             </Link>
             <div className="card-text">
@@ -52,7 +30,7 @@ const IndexPage = props => (
           </div>
           <div className="item2 card">
             <Link to="/adults">
-              <Img fluid={props.data.leaf.childImageSharp.fluid} />
+              <Img fluid={props.data.adults.childImageSharp.fluid} />
               <h2>Adults</h2>
             </Link>
 
@@ -67,7 +45,7 @@ const IndexPage = props => (
           </div>
           <div className="item3 card">
             <Link to="/family-yoga">
-              <Img fluid={props.data.yogaclass.childImageSharp.fluid} />
+              <Img fluid={props.data.familyyoga.childImageSharp.fluid} />
               <h2 className="section-heading">Family Yoga</h2>
             </Link>
             <div className="card-text">
@@ -81,7 +59,7 @@ const IndexPage = props => (
           </div>
           <div className="item4 card">
             <Link to="/event-yoga">
-              <Img fluid={props.data.yogaposies.childImageSharp.fluid} />
+              <Img fluid={props.data.eventyoga.childImageSharp.fluid} />
               <h2>Event Yoga</h2>
             </Link>
             <div className="card-text">
@@ -95,7 +73,7 @@ const IndexPage = props => (
           </div>
           <div className="item5 card">
             <Link to="/private-yoga">
-              <Img fluid={props.data.leaf.childImageSharp.fluid} />
+              <Img fluid={props.data.yogaprivate.childImageSharp.fluid} />
               <h2>Private Classes</h2>
             </Link>
 
@@ -106,13 +84,14 @@ const IndexPage = props => (
                 tree &amp; crawl on the floor like a cat. Children are very
                 flexible - we eventually lose that flexibility as we age.
                 Through playful laughter &amp; a sense of adventure kids can
-                learn basic flexibility, coordination, body awareness &amp; selfcontrol. 
+                learn basic flexibility, coordination, body awareness &amp;
+                selfcontrol.
               </p>
             </div>
           </div>
           <div className="item6 card">
             <Link to="/workshops-and-trainings">
-              <Img fluid={props.data.yogaclass.childImageSharp.fluid} />
+              <Img fluid={props.data.yogaclassstand.childImageSharp.fluid} />
               <h2 className="section-heading">Workshops &amp; Trainings</h2>
             </Link>
             <div className="card-text">
@@ -125,7 +104,6 @@ const IndexPage = props => (
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </PageLayout>
@@ -156,22 +134,52 @@ export const pageQuery = graphql`
         }
       }
     }
-    allTribeEvents {
-      edges {
-        node {
-          title
-          start_date(formatString: "MMMM DD, YYYY")
-          end_date(formatString: "HH:MM a")
-          description
-          cost
-          categories {
-            name
-          }
-          venue {
-            venue
-            website
-          }
-          website
+    familyyoga: file(relativePath: { eq: "family-yoga.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    adults: file(relativePath: { eq: "adults.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    eventyoga: file(relativePath: { eq: "eventyoga.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    yogaclassstand: file(relativePath: { eq: "yogaclassstand.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    yogaclassmat: file(relativePath: { eq: "yogaclassmat.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    yogakids: file(relativePath: { eq: "yogakids.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    yogaprivate: file(relativePath: { eq: "yogaprivate.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

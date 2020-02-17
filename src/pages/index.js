@@ -17,7 +17,7 @@ const IndexPage = props => (
       <div className="index-cards">
         <div className="item1 card">
           <Link to="/kids">
-            <Img fluid={props.data.yogaposies.childImageSharp.fluid} />
+            <Img fluid={props.data.yogakids.childImageSharp.fluid} />
             <h2>Kids Yoga</h2>
           </Link>
           <div className="card-text">
@@ -43,7 +43,7 @@ const IndexPage = props => (
           </div>
         </div>
         <div className="item2 card">
-          <Img fluid={props.data.leaf.childImageSharp.fluid} />
+          <Img fluid={props.data.yogateens.childImageSharp.fluid} />
           <div className="card-text">
             <h2>Benefits of Yoga for kids</h2>
             <p>
@@ -60,7 +60,7 @@ const IndexPage = props => (
           </div>
         </div>
         <div className="item3 card">
-          <Img fluid={props.data.yogaclass.childImageSharp.fluid} />
+          <Img fluid={props.data.familyyoga.childImageSharp.fluid} />
           <div className="card-text">
             <h2 className="section-heading">Children Who Practice Yoga</h2>
             <ul>
@@ -104,6 +104,25 @@ const IndexPage = props => (
           ))}
         </ul>
       </div>
+      <div className="quotes">
+        <div className="quote1">
+          <p>
+            <em>
+              “Children are pure potentiality, harnessing this energy at an
+              earlier age only accelerates yoga’s path to enlightenment.” -
+              Deepak Chopra
+            </em>
+          </p>
+        </div>
+        <div className="quote2">
+          <p>
+            <em>
+              “Success in yoga provides a template for success in life and its
+              never to young to start.” - David Simon
+            </em>
+          </p>
+        </div>
+      </div>
     </div>
   </PageLayout>
 )
@@ -112,23 +131,23 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    yogaposies: file(relativePath: { eq: "kidyoga.jpg" }) {
+    yogateens: file(relativePath: { eq: "yogateensq.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    leaf: file(relativePath: { eq: "leaf.jpg" }) {
+    familyyoga: file(relativePath: { eq: "family-yogasq.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    yogaclass: file(relativePath: { eq: "yogaclass.jpg" }) {
+    yogakids: file(relativePath: { eq: "yogakidsq.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
         }
       }

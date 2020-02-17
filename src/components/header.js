@@ -54,15 +54,6 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link
-              to="/links"
-              className="linkItem"
-              activeClassName="linkItemActive"
-            >
-              links
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/contact"
               className="linkItem"
               activeClassName="linkItemActive"
