@@ -3,9 +3,7 @@ body {
   background-position: center;
   background-size: cover;
   margin: 0px;
-  // font-family: "Ibarra Real Nova", serif;
   font-family: "Montserrat", sans-serif;
-  // font-family: "Rokkitt", serif;
   background-color: #f5f5f5;
 }
 
@@ -18,7 +16,6 @@ h5 {
 }
 
 .mainBody {
- 
   @extend %linkStyle;
   /*  margin: 0 auto;
   max-width: 960px;
@@ -42,6 +39,14 @@ h5 {
   align-items: center;
   flex-direction: row;
 
+  .ypBannerHome {
+    h1 {
+      @include for-size(tablet-only) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
   .ypMenu {
     .header-links {
       height: 100%;
@@ -49,11 +54,14 @@ h5 {
       margin: 0;
       display: flex;
       font-size: 0.9em;
-      padding-left: 200px;
+      margin-left: 30px;
       text-transform: capitalize;
 
       > li {
         padding: 0px 10px;
+      }
+      .font-awesome-icon {
+        font-size: 18px;
       }
 
       .linkItem {
@@ -75,6 +83,9 @@ h5 {
     flex-direction: row;
   }
   @include for-size(tablet-only) {
+    flex-direction: column;
+  }
+  @include for-size(phone-only) {
     flex-direction: column;
   }
 }
