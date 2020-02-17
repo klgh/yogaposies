@@ -71,6 +71,17 @@ const Header = ({ siteTitle }) => (
             />
           </Link>
         </li>
+        <li>
+          <Link
+            to="https://www.instagram.com/realyogisofatlanta/"
+            className="font-awesome-icon"
+          >
+            <FontAwesomeIcon
+              title="yoga posies instagram"
+              icon={["fab", "instagram"]}
+            />
+          </Link>
+        </li>
       </ul>
     </nav>
   </header>
