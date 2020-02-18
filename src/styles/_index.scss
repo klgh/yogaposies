@@ -85,7 +85,6 @@
 
   @include for-size(tablet-only) {
     margin-top: auto;
-    margin-left: 1%;
   }
 
   h3 {
@@ -102,8 +101,9 @@
     }
 
     @include for-size(tablet-only) {
-      flex-direction: column;
+      flex-direction: row;
       margin-left: 10%;
+      flex-wrap: wrap;
     }
 
     li {
