@@ -16,6 +16,15 @@ const Header = ({ siteTitle }) => (
     <nav role="navigation" className="ypMenu">
       <ul className="header-links" id="menu">
         <li>
+          <a
+            href="https://www.patreon.com/yogawithnatalie"
+            className="linkItem"
+            target="_blank"
+          >
+            online classes
+          </a>
+        </li>
+        <li>
           <Link
             to="/about"
             className="linkItem"

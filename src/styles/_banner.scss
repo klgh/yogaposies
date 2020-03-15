@@ -1,0 +1,23 @@
+.banner {
+  background: rgb(255, 91, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 91, 104, 1) 0%,
+    rgba(255, 206, 206, 1) 50%,
+    rgba(255, 91, 104, 1) 100%
+  );
+
+  .banner-text {
+    margin: 0 auto;
+    max-width: 200px;
+    font-weight: bold;
+
+    a:link,
+    a:visited,
+    a:active,
+    a:hover {
+      color: $linkColor;
+      text-decoration: none;
+    }
+  }
+}
