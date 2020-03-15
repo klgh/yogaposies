@@ -20,6 +20,7 @@ const Header = ({ siteTitle }) => (
             href="https://www.patreon.com/yogawithnatalie"
             className="linkItem"
             target="_blank"
+            rel="noopener noreferrer"
           >
             online classes
           </a>
