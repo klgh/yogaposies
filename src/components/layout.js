@@ -5,6 +5,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 import "../styles/styles.scss"
+import Banner from "./banner"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Banner />
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="mainBody">{children}</main>
       <Footer />

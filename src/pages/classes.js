@@ -13,6 +13,9 @@ const IndexPage = props => (
       </div>
 
       <div className="container">
+        <div className="online-video">
+          <Link to="/video">NOW STREAMING</Link>
+        </div>
         <div className="class-cards">
           <div className="item1 card">
             <Link to="/kids">
