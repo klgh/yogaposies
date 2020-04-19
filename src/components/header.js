@@ -16,14 +16,13 @@ const Header = ({ siteTitle }) => (
     <nav role="navigation" className="ypMenu">
       <ul className="header-links" id="menu">
         <li>
-          <a
-            href="https://www.patreon.com/yogawithnatalie"
+          <Link
+            to="/patreon"
             className="linkItem"
-            target="_blank"
-            rel="noopener noreferrer"
+            activeClassName="linkItemActive"
           >
             online classes
-          </a>
+          </Link>
         </li>
         <li>
           <Link
@@ -71,26 +70,30 @@ const Header = ({ siteTitle }) => (
           </Link>
         </li>
         <li>
-          <Link
-            to="https://www.facebook.com/YogaPosies/"
-            className="font-awesome-icon"
+          <a
+            href="https://www.facebook.com/YogaPosies/"
+            className="linkItem"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               title="yoga posies facebook"
               icon={["fab", "facebook"]}
             />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="https://www.instagram.com/realyogisofatlanta/"
-            className="font-awesome-icon"
+          <a
+            href="https://www.instagram.com/realyogisofatlanta/"
+            className="linkItem"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               title="yoga posies instagram"
               icon={["fab", "instagram"]}
             />
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
