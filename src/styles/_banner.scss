@@ -1,11 +1,5 @@
 .banner {
-  background: rgb(255, 91, 104);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 91, 104, 1) 0%,
-    rgba(255, 206, 206, 1) 50%,
-    rgba(255, 91, 104, 1) 100%
-  );
+  background: rgb(240, 204, 235);
 
   .banner-text {
     margin: 0 auto;
@@ -16,7 +10,7 @@
     a:visited,
     a:active,
     a:hover {
-      color: $linkColor;
+      color: #7741b5;
       text-decoration: none;
     }
   }

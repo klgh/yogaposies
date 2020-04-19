@@ -16,12 +16,46 @@ const IndexPage = props => (
     <div className="container">
       <div className="index-cards">
         <div className="item1 card">
-          <Link to="/kids">
-            <Img fluid={props.data.yogakids.childImageSharp.fluid} />
-            <h2>Kids Yoga</h2>
+          <Link to="/patreon">
+            <Img fluid={props.data.yogawithnatalie.childImageSharp.fluid} />
+            <h2>Yoga With Natalie Online</h2>
           </Link>
           <div className="card-text">
             <p>
+              I'm now teaching classes online. Membership is managed
+              <a
+                href="https://www.patreon.com/yogawithnatalie"
+                className="linkItem"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                on Patreon
+              </a>{" "}
+              at different tiers. <br />
+              Below are links to the categorized videos, when logged into
+              Patreon you can view the videos there or easily here as well.
+            </p>
+          </div>
+        </div>
+        <div className="item2 card">
+          <Link to="/kids">
+            <Img fluid={props.data.yogakids.childImageSharp.fluid} />
+            <h2>Benefits of Yoga for kids</h2>
+          </Link>
+          <div className="card-text">
+            <p>
+              Yoga is for everyone. Children do yoga naturally, they love to be
+              upside down in downward facing dog, stand on one leg like a tree
+              &amp; crawl on the floor like a cat. Children are very flexible -
+              we eventually lose that flexibility as we age. Through playful
+              laughter &amp; a sense of adventure kids can learn basic
+              flexibility, coordination, body awareness &amp; self control. If
+              they are feeling anxious about talking in front of the class or
+              having trouble focusing on their homework, kids will unconsciously
+              call upon the mind calming techniques taught to them in yoga.
+            </p>
+            {/*  <p>
               Yoga is expressive and that is why it is so appealing to children.
               Our goal at Yoga Posies is to introduce yoga in a clear and simple
               way that makes it fun to do. We practice fun-filled poses, games,
@@ -39,10 +73,10 @@ const IndexPage = props => (
               potential. Classes maintain a positive environment that supports
               self-esteem, confidence, body appreciation and tools for stress
               management.
-            </p>
+            </p> */}
           </div>
         </div>
-        <div className="item2 card">
+        {/*  <div className="item3 card">
           <Img fluid={props.data.yogateens.childImageSharp.fluid} />
           <div className="card-text">
             <h2>Benefits of Yoga for kids</h2>
@@ -59,7 +93,7 @@ const IndexPage = props => (
             </p>
           </div>
         </div>
-        <div className="item3 card">
+        <div className="item4 card">
           <Img fluid={props.data.familyyoga.childImageSharp.fluid} />
           <div className="card-text">
             <h2 className="section-heading">Children Who Practice Yoga</h2>
@@ -81,7 +115,7 @@ const IndexPage = props => (
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <div className="upcoming-events">
         <h3>Upcoming Classes</h3>
@@ -131,6 +165,13 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
+    yogawithnatalie: file(relativePath: { eq: "YogawithNatalie.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     yogateens: file(relativePath: { eq: "yogateensq.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
@@ -152,6 +193,5 @@ export const pageQuery = graphql`
         }
       }
     }
-
   }
 `

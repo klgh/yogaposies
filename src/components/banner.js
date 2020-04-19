@@ -9,7 +9,7 @@ const Banner = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Take Online Classes!
+        Now Teaching Online!
       </a>
     </div>
   </div>

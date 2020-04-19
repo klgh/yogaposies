@@ -14,10 +14,33 @@ const IndexPage = props => (
 
       <div className="container">
         <div className="online-video">
-          <Link to="/video">NOW STREAMING</Link>
+          <Link to="/patreon">NOW STREAMING</Link>
         </div>
         <div className="class-cards">
           <div className="item1 card">
+            <Link to="/patreon">
+              <Img fluid={props.data.patreon.childImageSharp.fluid} />
+              <h2>Online Classes</h2>
+            </Link>
+            <div className="card-text">
+              <p>
+                I'm now teaching classes online. Membership is managed
+                <a
+                  href="https://www.patreon.com/yogawithnatalie"
+                  className="linkItem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  on Patreon
+                </a>{" "}
+                at different tiers. <br />
+                Below are links to the categorized videos, when logged into
+                Patreon you can view the videos there or easily here as well.
+              </p>
+            </div>
+          </div>
+          <div className="item2 card">
             <Link to="/kids">
               <Img fluid={props.data.yogakids.childImageSharp.fluid} />
               <h2>Kids</h2>
@@ -31,7 +54,7 @@ const IndexPage = props => (
               </p>
             </div>
           </div>
-          <div className="item2 card">
+          <div className="item3 card">
             <Link to="/adults">
               <Img fluid={props.data.adults.childImageSharp.fluid} />
               <h2>Adults</h2>
@@ -46,7 +69,7 @@ const IndexPage = props => (
               </p>
             </div>
           </div>
-          <div className="item3 card">
+          <div className="item4 card">
             <Link to="/family-yoga">
               <Img fluid={props.data.familyyoga.childImageSharp.fluid} />
               <h2 className="section-heading">Family Yoga</h2>
@@ -60,7 +83,7 @@ const IndexPage = props => (
               </p>
             </div>
           </div>
-          <div className="item4 card">
+          <div className="item5 card">
             <Link to="/event-yoga">
               <Img fluid={props.data.eventyoga.childImageSharp.fluid} />
               <h2>Event Yoga</h2>
@@ -74,7 +97,7 @@ const IndexPage = props => (
               </p>
             </div>
           </div>
-          <div className="item5 card">
+          <div className="item6 card">
             <Link to="/private-yoga">
               <Img fluid={props.data.yogaprivate.childImageSharp.fluid} />
               <h2>Private Classes</h2>
@@ -92,7 +115,7 @@ const IndexPage = props => (
               </p>
             </div>
           </div>
-          <div className="item6 card">
+          <div className="item7 card">
             <Link to="/workshops-and-trainings">
               <Img fluid={props.data.yogaclassstand.childImageSharp.fluid} />
               <h2 className="section-heading">Workshops &amp; Trainings</h2>
@@ -116,6 +139,13 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
+    patreon: file(relativePath: { eq: "Patreon_Navy.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     yogaposies: file(relativePath: { eq: "kidyoga.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
