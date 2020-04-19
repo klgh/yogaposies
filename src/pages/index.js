@@ -83,7 +83,7 @@ const IndexPage = props => (
           </div>
         </div>
       </div>
-      <div className="upcoming-events">
+      {/* <div className="upcoming-events">
         <h3>Upcoming Classes</h3>
         <ul>
           {props.data.allTribeEvents.edges.map(events => (
@@ -103,7 +103,7 @@ const IndexPage = props => (
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
       <div className="quotes">
         <div className="quote1">
           <p>
@@ -152,24 +152,6 @@ export const pageQuery = graphql`
         }
       }
     }
-    allTribeEvents {
-      edges {
-        node {
-          title
-          start_date(formatString: "MMMM DD, YYYY")
-          end_date(formatString: "HH:MM a")
-          description
-          cost
-          categories {
-            name
-          }
-          venue {
-            venue
-            website
-          }
-          website
-        }
-      }
-    }
+
   }
 `
