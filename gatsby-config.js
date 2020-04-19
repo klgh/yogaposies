@@ -49,7 +49,7 @@ module.exports = {
         perPage: 100,
         searchAndReplaceContentUrls: {
           sourceUrl: "https://content.yogaposies.com",
-          replacementUrl: "https://localhost:8000",
+          replacementUrl: "https://content.yogaposies.com",
         },
         auth: {
           wpcom_user: process.env.WORDPRESS_USER,

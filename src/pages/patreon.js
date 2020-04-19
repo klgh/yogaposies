@@ -38,11 +38,11 @@ const IndexPage = props => (
               <h3>Mobility</h3>
             </Link>
           </div>
-          {/* <div className="item3 card">
-            <Link to="/family-yoga">
-              <h3 className="section-heading">Family Yoga</h3>
+          <div className="item3 card">
+            <Link to="/yin-yoga">
+              <h3 className="section-heading">Yin Yoga</h3>
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
