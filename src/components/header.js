@@ -17,15 +17,6 @@ const Header = ({ siteTitle }) => (
       <ul className="header-links" id="menu">
         <li>
           <Link
-            to="/patreon"
-            className="linkItem"
-            activeClassName="linkItemActive"
-          >
-            online classes
-          </Link>
-        </li>
-        <li>
-          <Link
             to="/about"
             className="linkItem"
             activeClassName="linkItemActive"

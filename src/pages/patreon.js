@@ -1,7 +1,6 @@
 import React from "react"
 import PageLayout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 
 const IndexPage = props => (
   <PageLayout>
@@ -29,19 +28,22 @@ const IndexPage = props => (
       <div className="container">
         <div className="class-cards">
           <div className="item1 card">
-            <Link to="/live-classes">
+            <a href="https://yogawithnatalie.yoga/live-videos/"
+              target="_blank" rel="noopener noreferrer">
               <h3>Live Classes</h3>
-            </Link>
+            </a>
           </div>
           <div className="item2 card">
-            <Link to="/mobility">
+            <a href="https://yogawithnatalie.yoga/mobility/"
+              target="_blank" rel="noopener noreferrer">
               <h3>Mobility</h3>
-            </Link>
+            </a>
           </div>
           <div className="item3 card">
-            <Link to="/yin-yoga">
+            <a href="https://yogawithnatalie.yoga/yin-yoga/"
+              target="_blank" rel="noopener noreferrer">
               <h3 className="section-heading">Yin Yoga</h3>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
