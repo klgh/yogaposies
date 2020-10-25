@@ -21,27 +21,44 @@ const IndexPage = props => (
           </a>{" "}
           at different tiers. <br />
           Below are links to the categorized videos, when logged into Patreon
-          you can view the videos there or easily here as well.
+          you can view the videos there or easily{" "}
+          <a
+            href="https://yogawithnatalie.yoga/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>{" "}
+          as well.
         </p>
       </div>
 
       <div className="container">
         <div className="class-cards">
           <div className="item1 card">
-            <a href="https://yogawithnatalie.yoga/live-videos/"
-              target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://yogawithnatalie.yoga/live-videos/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>Live Classes</h3>
             </a>
           </div>
           <div className="item2 card">
-            <a href="https://yogawithnatalie.yoga/mobility/"
-              target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://yogawithnatalie.yoga/mobility/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>Mobility</h3>
             </a>
           </div>
           <div className="item3 card">
-            <a href="https://yogawithnatalie.yoga/yin-yoga/"
-              target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://yogawithnatalie.yoga/yin-meditation/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3 className="section-heading">Yin Yoga</h3>
             </a>
           </div>
