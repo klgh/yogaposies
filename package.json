@@ -25,7 +25,7 @@
     "gatsby-source-tribe-events": "^1.0.1",
     "gatsby-source-wordpress": "^3.3.39",
     "gatsby-transformer-sharp": "^2.5.19",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
