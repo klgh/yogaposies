@@ -30,5 +30,19 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // the only required plugin option for WordPress is the GraphQL url.
+        url: `https://content.yogaposies.com/graphql`,
+        baseUrl: process.env.WORDPRESS_BASE_URL,
+        protocol: process.env.WORDPRESS_PROTOCOL,
+        hostingWPCOM: process.env.WORDPRESS_HOSTING_WPCOM === "true",
+        useACF: process.env.WORDPRESS_USE_ACF === "true",
+        acfOptionPageIds: [],
+        verboseOutput: process.env.WORDPRESS_VERBOSE_OUTPUT === "true",
+        perPage: 100,
+      },
+    },
   ],
 }

@@ -1,197 +1,129 @@
-import React from "react"
-import PageLayout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+import * as React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-const IndexPage = props => (
-  <PageLayout>
-    <SEO title="Yoga Posies | atlanta yoga for kids and adults" />
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import * as styles from "../components/index.module.css"
 
-    <div className="hero">
-      <Image />
+const links = [
+  {
+    text: "Tutorial",
+    url: "https://www.gatsbyjs.com/docs/tutorial",
+    description:
+      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+  },
+  {
+    text: "Examples",
+    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    description:
+      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+  },
+  {
+    text: "Plugin Library",
+    url: "https://www.gatsbyjs.com/plugins",
+    description:
+      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+  },
+  {
+    text: "Build and Host",
+    url: "https://www.gatsbyjs.com/cloud",
+    description:
+      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+  },
+]
+
+const samplePageLinks = [
+  {
+    text: "Page 2",
+    url: "page-2",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
+  { text: "TypeScript", url: "using-typescript" },
+  { text: "Server Side Rendering", url: "using-ssr" },
+  { text: "Deferred Static Generation", url: "using-dsg" },
+]
+
+const moreLinks = [
+  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  {
+    text: "Documentation",
+    url: "https://gatsbyjs.com/docs/",
+  },
+  {
+    text: "Starters",
+    url: "https://gatsbyjs.com/starters/",
+  },
+  {
+    text: "Showcase",
+    url: "https://gatsbyjs.com/showcase/",
+  },
+  {
+    text: "Contributing",
+    url: "https://www.gatsbyjs.com/contributing/",
+  },
+  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+]
+
+const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+
+const IndexPage = () => (
+  <Layout>
+    <Seo title="Home" />
+    <div className={styles.textCenter}>
+      <StaticImage
+        src="../images/example.png"
+        loading="eager"
+        width={64}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt=""
+        style={{ marginBottom: `var(--space-3)` }}
+      />
+      <h1>
+        Welcome to <b>Gatsby!</b>
+      </h1>
+      <p className={styles.intro}>
+        <b>Example pages:</b>{" "}
+        {samplePageLinks.map((link, i) => (
+          <React.Fragment key={link.url}>
+            <Link to={link.url}>{link.text}</Link>
+            {i !== samplePageLinks.length - 1 && <> · </>}
+          </React.Fragment>
+        ))}
+        <br />
+        Edit <code>src/pages/index.js</code> to update this page.
+      </p>
     </div>
-
-    <div className="container">
-      <div className="index-cards">
-        <div className="item1 card">
-          <Link to="/patreon">
-            <Img fluid={props.data.yogawithnatalie.childImageSharp.fluid} />
-            <h2>Yoga With Natalie Online</h2>
-          </Link>
-          <div className="card-text">
-            <p>
-              I'm now teaching classes online. Membership is managed
-              <a
-                href="https://www.patreon.com/yogawithnatalie"
-                className="linkItem"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                on Patreon
-              </a>{" "}
-              at different tiers. <br />
-              Below are links to the categorized videos, when logged into
-              Patreon you can view the videos there or easily here as well.
-            </p>
-          </div>
-        </div>
-        <div className="item2 card">
-          <Link to="/kids">
-            <Img fluid={props.data.yogakids.childImageSharp.fluid} />
-            <h2>Benefits of Yoga for kids</h2>
-          </Link>
-          <div className="card-text">
-            <p>
-              Yoga is for everyone. Children do yoga naturally, they love to be
-              upside down in downward facing dog, stand on one leg like a tree
-              &amp; crawl on the floor like a cat. Children are very flexible -
-              we eventually lose that flexibility as we age. Through playful
-              laughter &amp; a sense of adventure kids can learn basic
-              flexibility, coordination, body awareness &amp; self control. If
-              they are feeling anxious about talking in front of the class or
-              having trouble focusing on their homework, kids will unconsciously
-              call upon the mind calming techniques taught to them in yoga.
-            </p>
-            {/*  <p>
-              Yoga is expressive and that is why it is so appealing to children.
-              Our goal at Yoga Posies is to introduce yoga in a clear and simple
-              way that makes it fun to do. We practice fun-filled poses, games,
-              and breathing exercises to promote:
-            </p>
-            <ul>
-              <li>Physical Strength and Flexibility Concentration</li>
-              <li>Focus and Attention</li>
-              <li>A Feeling of Well-being and Respect for others</li>
-              <li>Confidence and Self-Esteem</li>
-            </ul>
-            <p>
-              Through learning the physical postures of yoga, your child will
-              learn how to explore and appreciate his/her own creative
-              potential. Classes maintain a positive environment that supports
-              self-esteem, confidence, body appreciation and tools for stress
-              management.
-            </p> */}
-          </div>
-        </div>
-        {/*  <div className="item3 card">
-          <Img fluid={props.data.yogateens.childImageSharp.fluid} />
-          <div className="card-text">
-            <h2>Benefits of Yoga for kids</h2>
-            <p>
-              Yoga is for everyone. Children do yoga naturally, they love to be
-              upside down in downward facing dog, stand on one leg like a tree
-              &amp; crawl on the floor like a cat. Children are very flexible -
-              we eventually lose that flexibility as we age. Through playful
-              laughter &amp; a sense of adventure kids can learn basic
-              flexibility, coordination, body awareness &amp; self control. If
-              they are feeling anxious about talking in front of the class or
-              having trouble focusing on their homework, kids will unconsciously
-              call upon the mind calming techniques taught to them in yoga.
-            </p>
-          </div>
-        </div>
-        <div className="item4 card">
-          <Img fluid={props.data.familyyoga.childImageSharp.fluid} />
-          <div className="card-text">
-            <h2 className="section-heading">Children Who Practice Yoga</h2>
-            <ul>
-              <li>Develop strong, limber and healthy bodies</li>
-              <li>Set a lifelong foundation for well-being</li>
-              <li>Foster creative expression, imagination</li>
-              <li>Increase focus, concentration and attention span</li>
-              <li>
-                Cultivate self-esteem, setting patterns of success and
-                achievement
-              </li>
-              <li>Relax and sleep better</li>
-              <li>Cope with life stressors more effectively</li>
-              <li>Learn about anatomy and physiology</li>
-              <li>
-                Discover a sense of awareness and respect for themselves, for
-                others and the world around them
-              </li>
-            </ul>
-          </div>
-        </div> */}
-      </div>
-      {/* <div className="upcoming-events">
-        <h3>Upcoming Classes</h3>
-        <ul>
-          {props.data.allTribeEvents.edges.map(events => (
-            <li>
-              <div className="event-information">
-                <h3 className="event-title">{events.node.title}</h3>
-                <p className="event-details">
-                  {events.node.start_date}
-                  <br />
-                  <a href={`${events.node.venue.website}`}>
-                    {events.node.venue.venue}
-                  </a>
-                  <br />
-                  <a href={`${events.node.website}`}>more info</a>
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div> */}
-      <div className="quotes">
-        <div className="quote1">
-          <p>
-            <em>
-              “Children are pure potentiality, harnessing this energy at an
-              earlier age only accelerates yoga’s path to enlightenment.” -
-              Deepak Chopra
-            </em>
-          </p>
-        </div>
-        <div className="quote2">
-          <p>
-            <em>
-              “Success in yoga provides a template for success in life and its
-              never to young to start.” - David Simon
-            </em>
-          </p>
-        </div>
-      </div>
-    </div>
-  </PageLayout>
+    <ul className={styles.list}>
+      {links.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+          >
+            {link.text} ↗
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
+    {moreLinks.map((link, i) => (
+      <React.Fragment key={link.url}>
+        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+        {i !== moreLinks.length - 1 && <> · </>}
+      </React.Fragment>
+    ))}
+  </Layout>
 )
 
-export default IndexPage
+/**
+ * Head export to define metadata for the page
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+ */
+export const Head = () => <Seo title="Home" />
 
-export const pageQuery = graphql`
-  query {
-    yogawithnatalie: file(relativePath: { eq: "YogawithNatalie.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    yogateens: file(relativePath: { eq: "yogateensq.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    familyyoga: file(relativePath: { eq: "family-yogasq.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    yogakids: file(relativePath: { eq: "yogakidsq.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+export default IndexPage

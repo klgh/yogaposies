@@ -1,0 +1,42 @@
+{
+  "name": "yoga-posies",
+  "version": "1.0.0",
+  "private": true,
+  "description": "the yoga posies website",
+  "keywords": [
+    "gatsby"
+  ],
+  "bugs": {
+    "url": "https://github.com/klgh/yogaposies/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klgh/yogaposies"
+  },
+  "license": "MIT",
+  "author": "Kaleigh Scruggs <kaleighscruggs@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^4.24.5",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-source-wordpress": "^6.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
