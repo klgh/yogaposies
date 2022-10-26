@@ -1,58 +1,42 @@
 {
   "name": "yoga-posies",
+  "version": "1.0.0",
   "private": true,
   "description": "the yoga posies website",
-  "version": "0.1.0",
-  "author": "Kaleigh Scruggs <kaleighscruggs@gmail.com>",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.10",
-    "gatsby": "^2.24.85",
-    "gatsby-cli": "^2.12.111",
-    "gatsby-image": "^2.4.21",
-    "gatsby-plugin-google-analytics": "^2.3.19",
-    "gatsby-plugin-manifest": "^2.4.35",
-    "gatsby-plugin-offline": "^3.2.37",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-plugin-react-helmet": "^3.3.14",
-    "gatsby-plugin-robots-txt": "^1.5.3",
-    "gatsby-plugin-sass": "^2.3.21",
-    "gatsby-plugin-sharp": "^2.6.43",
-    "gatsby-plugin-sitemap": "^2.4.17",
-    "gatsby-source-filesystem": "^2.3.35",
-    "gatsby-source-tribe-events": "^1.0.1",
-    "gatsby-source-wordpress": "^3.3.39",
-    "gatsby-transformer-sharp": "^2.5.19",
-    "node-sass": "^4.14.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^5.2.1",
-    "react-icons": "^3.11.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/klgh/yogaposies/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/klgh/yogaposies"
   },
-  "bugs": {
-    "url": "https://github.com/klgh/yogaposies/issues"
+  "license": "MIT",
+  "author": "Kaleigh Scruggs <kaleighscruggs@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^4.24.5",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-source-wordpress": "^6.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
