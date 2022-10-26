@@ -7,11 +7,11 @@
     "gatsby"
   ],
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/klgh/yogaposies/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/klgh/yogaposies"
   },
   "license": "0BSD",
   "author": "Kaleigh Scruggs <kaleigh.scruggs@gmail.com>",
@@ -28,12 +28,15 @@
     "gatsby": "^4.24.5",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-plugin-sitemap": "^5.24.0",
     "gatsby-source-filesystem": "^4.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
