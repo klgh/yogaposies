@@ -42,10 +42,6 @@ module.exports = {
         acfOptionPageIds: [],
         verboseOutput: process.env.WORDPRESS_VERBOSE_OUTPUT === "true",
         perPage: 100,
-        auth: {
-          wpcom_user: process.env.WORDPRESS_USER,
-          wpcom_pass: process.env.WORDPRESS_PASSWORD,
-        },
       },
     },
   ],
