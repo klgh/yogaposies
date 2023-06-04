@@ -1,17 +1,17 @@
 {
   "name": "yoga-posies",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "keywords": [
     "gatsby"
   ],
   "bugs": {
-    "url": "https://github.com/klgh/yogaposies/issues"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/klgh/yogaposies"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
   "license": "0BSD",
   "author": "Kaleigh Scruggs <kaleigh.scruggs@gmail.com>",
@@ -25,21 +25,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^4.24.5",
-    "gatsby-plugin-a11y-report": "^1.1.1",
-    "gatsby-plugin-image": "^2.24.0",
-    "gatsby-plugin-manifest": "^4.24.0",
-    "gatsby-plugin-sass": "^5.24.0",
-    "gatsby-plugin-sharp": "^4.24.0",
-    "gatsby-plugin-sitemap": "^5.24.0",
-    "gatsby-source-filesystem": "^4.24.0",
-    "gatsby-transformer-sharp": "^4.24.0",
-    "prop-types": "^15.8.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "sass": "^1.55.0"
+    "gatsby": "^5.10.0",
+    "gatsby-plugin-image": "^3.10.0",
+    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-sharp": "^5.10.0",
+    "gatsby-source-filesystem": "^5.10.0",
+    "gatsby-transformer-sharp": "^5.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.8"
   }
 }
