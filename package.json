@@ -27,10 +27,10 @@
   "dependencies": {
     "gatsby": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
-    "gatsby-plugin-manifest": "^5.10.0",
+    "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-sharp": "^5.10.0",
-    "gatsby-source-filesystem": "^5.10.0",
-    "gatsby-transformer-sharp": "^5.10.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
