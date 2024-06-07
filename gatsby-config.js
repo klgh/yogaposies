@@ -10,9 +10,9 @@
 module.exports = {
   siteMetadata: {
     title: `Yoga Posies`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Yoga with Natalie`,
+    author: `@klgh`,
+    siteUrl: `https://yogaposies.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
