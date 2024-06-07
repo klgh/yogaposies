@@ -59,9 +59,9 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/natalie2.jpg"
         loading="eager"
-        width={64}
+        width={250}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
