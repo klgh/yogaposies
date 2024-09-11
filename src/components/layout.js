@@ -5,11 +5,25 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
+import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+
+const moreLinks = [
+  { text: "Patreon", url: "https://www.patreon.com/yogawithnatalie" },
+  {
+    text: "Instagram",
+    url: "https://www.instagram.com/realyogisofatlanta/",
+  },
+  {
+    text: "Video Library",
+    url: "https://yogawithnatalie.yoga/",
+  },
+]
+
+const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,9 +53,17 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          {moreLinks.map((link, i) => (
+            <React.Fragment key={link.url}>
+              <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+              {i !== moreLinks.length - 1 && <> · </>}
+            </React.Fragment>
+          ))}{" "}
+          <br />
+          <br />© {new Date().getFullYear()} &middot; Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>, by <a href="https://kaleigh.dev">Kaleigh</a>
+          <a href="https://www.gatsbyjs.com">Gatsby</a>, by{" "}
+          <a href="https://kaleigh.dev">klgh</a>
         </footer>
       </div>
     </>
