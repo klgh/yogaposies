@@ -25,6 +25,7 @@
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 }
+
 html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
@@ -33,6 +34,7 @@ html {
   line-height: var(--line-height-normal);
   overflow-y: scroll;
 }
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -43,6 +45,7 @@ body {
   margin: 0;
   word-wrap: break-word;
 }
+
 a {
   background-color: transparent;
   color: var(--color-primary);
@@ -52,24 +55,29 @@ a {
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
 }
+
 a:active,
 a:hover {
   outline-width: 0;
   text-decoration: none;
 }
+
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
   text-decoration: none;
 }
+
 b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
 }
+
 dfn {
   font-style: italic;
 }
+
 h1 {
   margin: 0;
   margin-bottom: 3rem;
@@ -77,13 +85,16 @@ h1 {
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
 }
+
 h1 > b {
   color: var(--color-primary);
 }
+
 img {
   border-style: none;
   max-width: 100%;
 }
+
 code,
 kbd,
 pre,
@@ -92,6 +103,7 @@ samp {
   font-size: 1em;
   line-height: inherit;
 }
+
 hr {
   box-sizing: content-box;
   overflow: visible;
@@ -104,15 +116,19 @@ hr {
   border: none;
   height: 1px;
 }
+
 * {
   box-sizing: inherit;
 }
+
 *:before {
   box-sizing: inherit;
 }
+
 *:after {
   box-sizing: inherit;
 }
+
 hgroup,
 img,
 figure,
@@ -126,12 +142,14 @@ p {
   padding: 0;
   margin-bottom: var(--space-4);
 }
+
 ul,
 ol {
   margin-left: var(--space-4);
   list-style-position: outside;
   list-style-image: none;
 }
+
 pre {
   margin-left: 0;
   margin-right: 0;
@@ -145,57 +163,72 @@ pre {
   word-wrap: normal;
   padding: var(--space-4);
 }
+
 b,
 strong,
 dt,
 th {
   font-weight: bold;
 }
+
 li {
   margin-bottom: calc(var(--space-4) / 2);
 }
+
 ol li,
 ul li {
   padding-left: 0;
 }
+
 li > ol,
 li > ul {
   margin-bottom: calc(var(--space-4) / 2);
   margin-left: var(--space-4);
   margin-top: calc(var(--space-4) / 2);
 }
+
 blockquote *:last-child {
   margin-bottom: 0;
 }
+
 li *:last-child {
   margin-bottom: 0;
 }
+
 p *:last-child {
   margin-bottom: 0;
 }
+
 li > p {
   margin-bottom: calc(var(--space-4) / 2);
 }
+
 p {
   max-width: 680px;
 }
+
 code {
   font-size: 0.875rem;
 }
+
 kbd {
   font-size: 0.875rem;
 }
+
 samp {
   font-size: 0.875rem;
 }
+
 abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
 }
+
 acronym {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
 }
+
 tt,
 code {
   background-color: var(--color-code-bg);
@@ -206,9 +239,11 @@ code {
   padding-top: 0.25em;
   word-break: normal;
 }
+
 pre code {
   background: none;
 }
+
 code:before,
 code:after,
 tt:before,
@@ -216,9 +251,115 @@ tt:after {
   content: "\00a0";
   letter-spacing: -0.2em;
 }
+
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial {
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: bold;
+  color: #555;
+}
+
+.schedule {
+  background-color: #f0f4f8;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.schedule-day {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-day h2 {
+  font-size: 1.8em;
+  color: #ff8c42;
+  /* Accent color for the days */
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.schedule-day p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.schedule-day p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.schedule-day p a:hover {
+  text-decoration: underline;
+}
+
+/* Emojis */
+.schedule-day p:before {
+  content: "🗓️ ";
+  margin-right: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .schedule {
+    padding: 20px;
+  }
+
+  .schedule h1 {
+    font-size: 2em;
+  }
+
+  .schedule-day h2 {
+    font-size: 1.5em;
+  }
+
+  .schedule-day p {
+    font-size: 1em;
+  }
 }
