@@ -290,7 +290,8 @@ pre tt:after {
   color: #555;
 }
 
-.schedule {
+.schedule,
+.about {
   background-color: #f0f4f8;
   padding: 40px 20px;
   max-width: 800px;
@@ -306,7 +307,14 @@ pre tt:after {
   color: #333;
 }
 
-.schedule-day {
+.about h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+.schedule-day,
+.about-content {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -328,6 +336,14 @@ pre tt:after {
   color: #555;
   display: flex;
   align-items: center;
+}
+
+.schedule-day p.friday-yin {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .schedule-day p a {

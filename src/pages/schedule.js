@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import * as React from "react"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -16,27 +15,41 @@ const SchedulePage = () => (
 
       <div class="schedule-day">
         <h2>Friday</h2>
-        <p>
-          🕕 Once a month: “Yin/Restorative” Yoga – A blend of yin, restorative,
-          myofascial release at A Touch of Health in Sandy Springs, 6:00 pm
+        <p class="friday-yin">
+          🕕 6:00 PM: Yin/Restorative Yoga{" "}
+          <i>
+            A blend of yin, restorative, and myofascial release at A Touch of
+            Health in Sandy Springs
+          </i>
+          <b>Next class: September 20</b>
         </p>
       </div>
 
       <div class="schedule-day">
         <h2>Saturday</h2>
-        <p>🕣 8:30 am at Dunwoody Baptist Center</p>
-        <p>🕙 10:00 am – Get on Natalie's email list to find out more!</p>
+        <p>
+          🕣 8:30 AM:&nbsp;
+          <a
+            href="https://www.dbc.org/fitness"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Dunwoody Baptist Fitness Center
+          </a>
+        </p>
+        <p>🕙 10:00 AM: Get on Natalie's email list to find out more!</p>
       </div>
 
       <div class="schedule-day">
         <h2>Sunday</h2>
         <p>
-          🕑 Once a month at Distillery of Modern Art –
+          🕑 12:00 PM: Once a month at &nbsp;
           <a
             href="https://distilleryofmodernart.com/our-events/"
             target="_blank"
+            rel="noreferrer"
           >
-            Event Details
+            Distillery of Modern Art
           </a>
         </p>
       </div>

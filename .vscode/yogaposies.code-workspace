@@ -13,5 +13,12 @@
             "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
         },
         "editor.wordWrap": "wordWrapColumn",
+        "alex-linter.noBinary": true,
+        "cSpell.words": [
+            "asana",
+            "myofascial",
+            "RCYT",
+            "Reiki"
+        ],
     }
 }
