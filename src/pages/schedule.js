@@ -10,17 +10,30 @@ const SchedulePage = () => (
 
       <div class="schedule-day">
         <h2>Monday</h2>
-        <p>🕖 7pm via Zoom on Patreon</p>
+        <p>
+          🕖 7pm via Zoom on&nbsp;{" "}
+          <a
+            href="https://www.patreon.com/yogawithnatalie"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Patreon
+          </a>
+        </p>
       </div>
 
       <div class="schedule-day">
         <h2>Friday</h2>
         <p class="friday-yin">
-          🕕 6:00 PM: Yin/Restorative Yoga{" "}
-          <i>
-            A blend of yin, restorative, and myofascial release at A Touch of
-            Health in Sandy Springs
-          </i>
+          🕕 6:00 PM: Yin/Restorative Yoga at&nbsp;{" "}
+          <a
+            href="https://touchofhealthatlanta.com/services/workshops-and-events/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            A Touch of Health
+          </a>
+          <i>A blend of yin, restorative, and myofascial release&nbsp;</i>
           <b>Next class: September 20</b>
         </p>
       </div>
@@ -37,7 +50,16 @@ const SchedulePage = () => (
             Dunwoody Baptist Fitness Center
           </a>
         </p>
-        <p>🕙 10:00 AM: Get on Natalie's email list to find out more!</p>
+        <p>
+          🕣 11:30 AM:&nbsp;
+          <a
+            href="https://touchofhealthatlanta.com/services/workshops-and-events/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            A Touch of Health
+          </a>
+        </p>
       </div>
 
       <div class="schedule-day">
@@ -45,12 +67,14 @@ const SchedulePage = () => (
         <p>
           🕑 12:00 PM: Once a month at &nbsp;
           <a
-            href="https://distilleryofmodernart.com/our-events/"
+            href="https://distilleryofmodernart.com/ticketed-events/"
             target="_blank"
             rel="noreferrer"
           >
             Distillery of Modern Art
           </a>
+          &nbsp;
+          <b>Next class: October 27</b>
         </p>
       </div>
     </section>
