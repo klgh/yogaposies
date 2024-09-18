@@ -64,7 +64,7 @@ const SchedulePage = () => (
 
       <div class="schedule-day">
         <h2>Sunday</h2>
-        <p>
+        <p class="friday-yin">
           🕑 12:00 PM: Once a month at &nbsp;
           <a
             href="https://distilleryofmodernart.com/ticketed-events/"
