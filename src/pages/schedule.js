@@ -105,6 +105,22 @@ const SchedulePage = () => (
           </p>
           <p class="author">- CB</p>
         </div>
+        <div class="testimonial">
+          <p class="quote">
+            I began practicing yoga about 15 years ago and Natalie was my first
+            teacher. She taught me everything I needed to know about alignment,
+            breathing, safety, strength and much more. Over the years, I've
+            attended many, many classes taught by others, and she is ALWAYS the
+            voice in my head, the one reminding me of the correct adjustments to
+            make, reminding me to breathe and to be kind to myself. If you are
+            new to yoga and want to explore its wonderful benefits, or older and
+            need better flexibility and strength, or just need a place to feel
+            safe and enjoy some movement, find a Natalie class. And if you can't
+            touch your toes or get up from the floor easily, absolutely find a
+            Natalie class!
+          </p>
+          <p class="author">- Carolyn S.</p>
+        </div>
       </div>
     </section>
 
