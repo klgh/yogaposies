@@ -86,7 +86,7 @@ h1 {
   letter-spacing: -0.01em;
 }
 
-h1 > b {
+h1>b {
   color: var(--color-primary);
 }
 
@@ -180,8 +180,8 @@ ul li {
   padding-left: 0;
 }
 
-li > ol,
-li > ul {
+li>ol,
+li>ul {
   margin-bottom: calc(var(--space-4) / 2);
   margin-left: var(--space-4);
   margin-top: calc(var(--space-4) / 2);
@@ -199,7 +199,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 
-li > p {
+li>p {
   margin-bottom: calc(var(--space-4) / 2);
 }
 
@@ -313,6 +313,7 @@ pre tt:after {
   margin-bottom: 30px;
   color: #333;
 }
+
 .schedule-day,
 .about-content {
   background-color: #fff;
