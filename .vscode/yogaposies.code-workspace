@@ -5,10 +5,13 @@
         }
     ],
     "settings": {
+        "workbench.preferredLightColorTheme": "Bearded Theme Milkshake Blueberry",
         "editor.formatOnSaveMode": "file",
         "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.formatOnPaste": true,
+        "material-icon-theme.activeIconPack": "react",
+        "material-icon-theme.hidesExplorerArrows": true,
         "[markdown]": {
             "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
         },
