@@ -9,13 +9,13 @@ const samplePageLinks = [
     description:
       "A simple example of linking to another page within a Gatsby site",
   },
-  {
-    text: "Schedule",
-    url: "/schedule",
-    badge: false,
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
+  // {
+  //   text: "Schedule",
+  //   url: "/schedule",
+  //   badge: false,
+  //   description:
+  //     "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+  // },
 ]
 
 const Header = ({ siteTitle }) => (

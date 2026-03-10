@@ -1,17 +1,29 @@
-import { Link } from "gatsby"
 import * as React from "react"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const SchedulePage = () => (
-  <Layout>
+  <>
     <section class="schedule">
       <h1>Class Schedule</h1>
 
       <div class="schedule-day">
         <h2>Monday</h2>
         <p>
-          🕖 7pm via Zoom on&nbsp;{" "}
+          🕖 7:00 PM via Zoom on&nbsp;{" "}
+          <a
+            href="https://www.patreon.com/yogawithnatalie"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Patreon
+          </a>
+        </p>
+      </div>
+
+      <div class="schedule-day">
+        <h2>Thursday</h2>
+        <p>
+          🕖 9:00 AM via Zoom on&nbsp;{" "}
           <a
             href="https://www.patreon.com/yogawithnatalie"
             target="_blank"
@@ -27,14 +39,13 @@ const SchedulePage = () => (
         <p class="friday-yin">
           🕕 6:00 PM: Yin/Restorative Yoga at&nbsp;{" "}
           <a
-            href="https://touchofhealthatlanta.com/services/workshops-and-events/"
+            href="https://touchofhealthatlanta.com/calendar/"
             target="_blank"
             rel="noreferrer"
           >
             A Touch of Health
           </a>
           <i>A blend of yin, restorative, and myofascial release&nbsp;</i>
-          <b>Next class: September 20</b>
         </p>
       </div>
 
@@ -42,18 +53,14 @@ const SchedulePage = () => (
         <h2>Saturday</h2>
         <p>
           🕣 8:30 AM:&nbsp;
-          <a
-            href="https://www.dbc.org/fitness"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://dbc.org/fitness" target="_blank" rel="noreferrer">
             Dunwoody Baptist Fitness Center
           </a>
         </p>
         <p>
           🕣 11:30 AM:&nbsp;
           <a
-            href="https://touchofhealthatlanta.com/services/workshops-and-events/"
+            href="https://touchofhealthatlanta.com/calendar/"
             target="_blank"
             rel="noreferrer"
           >
@@ -65,16 +72,24 @@ const SchedulePage = () => (
       <div class="schedule-day">
         <h2>Sunday</h2>
         <p class="friday-yin">
-          🕑 12:00 PM: Once a month at &nbsp;
+          🕑 12:00 PM&nbsp;
           <a
-            href="https://distilleryofmodernart.com/ticketed-events/"
+            href="https://distilleryofmodernart.com/products/yoga-at-doma"
             target="_blank"
             rel="noreferrer"
           >
             Distillery of Modern Art
           </a>
           &nbsp;
-          <b>Next class: October 27</b>
+          <i>Third Sunday of Every Month</i>
+          &nbsp;|&nbsp; Signup&nbsp;
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScJ0SlZsXfupn3QNN_oPJbKUDUGCSDVql4u24awTCl-BSRdjg/viewform"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here!{" "}
+          </a>
         </p>
       </div>
     </section>
@@ -123,9 +138,7 @@ const SchedulePage = () => (
         </div>
       </div>
     </section>
-
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  </>
 )
 
 export const Head = () => <Seo title="About" />

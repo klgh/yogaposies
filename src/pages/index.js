@@ -3,6 +3,7 @@ import * as React from "react"
 import * as styles from "../components/index.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import SchedulePage from "./schedule"
 
 const IndexPage = () => (
   <Layout>
@@ -24,6 +25,7 @@ const IndexPage = () => (
         has been hooked ever since.
       </p>
     </div>
+    <SchedulePage />
   </Layout>
 )
 

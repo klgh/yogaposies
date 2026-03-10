@@ -17,10 +17,6 @@ const moreLinks = [
     text: "Instagram",
     url: "https://www.instagram.com/realyogisofatlanta/",
   },
-  {
-    text: "Video Library",
-    url: "https://yogawithnatalie.yoga/",
-  },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
